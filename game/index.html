@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Midnight Vault — a Velvet Fox heist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0e1a; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { position: relative; }
+  canvas { display: block; background: #10182e; box-shadow: 0 0 60px rgba(0,0,0,.8); }
+  #hint {
+    position: absolute; left: 0; right: 0; bottom: -26px; text-align: center;
+    color: #8fa3c8; font: 12px/1.4 system-ui, sans-serif; letter-spacing: .04em;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">WASD / arrows — move &nbsp;·&nbsp; SHIFT — sneak &nbsp;·&nbsp; CLICK — throw a distraction coin &nbsp;·&nbsp; E — pick a lock &nbsp;·&nbsp; Q — EMP pulse &nbsp;·&nbsp; R — restart room</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/levels.js"></script>
+<script src="src/vision.js"></script>
+<script src="src/guards.js"></script>
+<script src="src/cameras.js"></script>
+<script src="src/loot.js"></script>
+<script src="src/alarm.js"></script>
+<script src="src/tools.js"></script>
+<script src="src/input.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
